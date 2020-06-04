@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 
 
@@ -8,4 +9,4 @@ def hello_www():
     return "Hello World Wide Web!"
 
 if __name__ == "__main__":
-    app.run(port=1234, threaded=True)
+    app.run(host="0.0.0.0", port=8080)
